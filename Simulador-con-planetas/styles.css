@@ -1,0 +1,45 @@
+/* Estilo para la imagen del meteorito */
+.small-meteorito {
+    width: 100px; /* Establece el ancho deseado en píxeles */
+    height: 100px; /* Establece el alto deseado en píxeles */
+}
+
+/* Estilos personalizados */
+
+/* Establece la imagen de fondo y su comportamiento */
+body {
+    background-image: url('planetas.jpeg');
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el contenido */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-attachment: fixed; /* Fija la imagen de fondo en su posición */
+    background-position: center; /* Centra la imagen de fondo */
+    position: relative; /* Establece la posición relativa para su uso posterior */
+}
+
+/* Estilos para el contenedor de las imágenes */
+.planet-container {
+    text-align: center; /* Centra el contenido del contenedor */
+    position: relative; /* Establece la posición relativa para su uso posterior */
+}
+
+/* Estilos para las imágenes del planeta y de caída libre */
+.planet-image,
+.free-fall-image {
+    width: 200px; /* Establece el ancho deseado en píxeles */
+    height: 200px; /* Establece el alto deseado en píxeles */
+    cursor: pointer; /* Cambia el cursor al puntero al pasar sobre las imágenes */
+}
+
+/* Estilos para la imagen de caída libre */
+.free-fall-image {
+    position: absolute; /* Establece la posición absoluta para superponerla en el planeta */
+    top: 100%; /* Coloca la imagen debajo del planeta (inicialmente) */
+    left: 50%; /* Centra la imagen horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición horizontalmente */
+    display: none; /* Inicialmente oculta la imagen de caída libre */
+}
+
+/* Estilos para el botón de simulación */
+#simulateButton {
+    margin-top: 10px; /* Establece un margen superior de 10 píxeles para el botón */
+}
